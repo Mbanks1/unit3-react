@@ -16,8 +16,7 @@ handleCircleSelection = (newIdx) => {
   this.setState({selectedCircleIdx: newIdx})
 }
 render() {
-
-    return (
+return (
     <div className="App">
     <header className="App-header">UNIT 3 FINAL ASSESSMENT</header>
       <main>

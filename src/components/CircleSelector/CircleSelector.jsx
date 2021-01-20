@@ -7,9 +7,9 @@ const CircleSelector = (props) => {
         {props.circleNo.map((circle, idx) => 
             <button
             key={circle}
-            className={props}
-            
-            ></button>
+            className={props.selectedCircleIdx === idx ? 'selected' : 'color'}
+            onClick={() => props.handleCircleSelection(idx)}
+            >{props.selectedCircleIdx === idx ? `Circle ${idx+1} Selected` : `Select Circle ${idx+1}`}</button>
         )}
         
         
@@ -21,4 +21,7 @@ const CircleSelector = (props) => {
      );
 }
  
+
+
+
 export default CircleSelector;
